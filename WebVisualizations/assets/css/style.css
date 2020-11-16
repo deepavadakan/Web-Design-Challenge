@@ -1,21 +1,33 @@
 body {
     background-color: lightgray;
+    margin:0;
 }
 
 h1,h2 {
-    color:blue;
-}
-.navbar {
-    background-color: white;
-}
-.navbar-brand {
-    background-color: blue;
-    color: white;
-    margin:10px;
+    color:turquoise;
+    font-size: 2.5em;
+    padding:20px;
 }
 p {
     display: block;
 }
+.navbar {
+    background-color:white;
+    margin: 0;
+}
+
+.navbar-brand {
+    background-color: rgb(64, 200, 224);
+    color: white;
+    padding:10px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    color: black;
+}
+
 .main-box {
     background: white;
     margin-left:10px;
@@ -26,16 +38,25 @@ p {
     margin-left:10px;
     margin-top:20px;  
 }
-img {
-    margin:auto;
-}
 
 #main-img {
     float: left;
+    width:50%
+}
+
+.visual-sm-img {
+    width: 100%;
+    padding:10px;
+    background-color: red;
+
 }
 
 .visualizations-img {
     width:100%;
+}
+
+.visual-sel-img {
+    background-color: teal;
 }
 
 
