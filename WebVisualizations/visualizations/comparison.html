@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Humidity</title>
+  <title>Max Temperature</title>
 
   <!-- Boostrap Stylesheet -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -39,8 +39,8 @@
                         Plots
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="max-temp.html">Max Temperature</a>
-                        <a class="dropdown-item active">Humidity</a>
+                        <a class="dropdown-item active">Max Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
                         <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
                         <a class="dropdown-item" href="wind-speed.html">Wind Speed</a>
                     </div>
@@ -61,41 +61,42 @@
 
     <div class="container">
         <div class="row">
-          <div class="main-box col-md-7 col-sm-12">
+          <div class="main-box">
             <h1>
-                vs. Humidity
+                Comparison: Latitude vs. X
             </h1>
             <hr>
-            <img class=visualizations-img src="../assets/images/Fig2.png" alt="City Latitude vs Max Temperature" >
-            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dtatset of over 500 cities.</p>
-          </div>
-
-          <!--Visualizations right box-->
-          <div class="col-lg-4">
+            <div id="sub-para">Click any plot to get in-depth analysis.</div>
             <div class="visualizations-box">
-                <h2>
-                    Visualizations
-                </h2>
-                <hr width=90%>
 
                 <!--Four charts-->
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-lg-6 col-sm-12">
+                        <h3>vs. Max Temperature</h3>
+                        <br>
                         <a href="max-temp.html">
                             <img class="visual-sm-img" src="../assets/images/Fig1.png" alt="City Latitude vs Max Temperature">
                         </a>
                     </div>
-                    <div class="col-6">
-                        <img class="visual-sm-img visual-sel-img" src="../assets/images/Fig2.png" alt="City Latitude vs Max Temperature">
+                    <div class="col-lg-6 col-sm-12">
+                        <h3>vs. Humidity</h3>
+                        <br>
+                        <a href="humidity.html">
+                            <img class="visual-sm-img" src="../assets/images/Fig2.png" alt="City Latitude vs Max Temperature">
+                        </a>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-lg-6 col-sm-12">
+                        <h3>vs. Cloudiness</h3>
+                        <br>
                         <a href="cloudiness.html">
                             <img class="visual-sm-img" src="../assets/images/Fig3.png" alt="City Latitude vs Max Temperature">
                         </a>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6 col-sm-12">
+                        <h3>vs. Wind Speed</h3>
+                        <br>
                         <a href="wind-speed.html">
                             <img class="visual-sm-img" src="../assets/images/Fig4.png" alt="City Latitude vs Max Temperature">
                         </a>
