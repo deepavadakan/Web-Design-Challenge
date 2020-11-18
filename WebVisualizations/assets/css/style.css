@@ -69,17 +69,31 @@ img {
 .visualizations-box {
     display:inline-block;
 }
+.nil-padding-right {
+    padding-right:0;
+}
+.nil-padding-left {
+    padding-left:0;
+}
 #main-img {
     float: left;
     width:50%
 }
-.visual-sm-img {
-    padding:10px;
-}
+
 .visual-sel-img {
     outline: 2px solid #026670;
 }
 #sub-para {
     margin-left:20px;
 }
+.cities-table {
+    width:95%;
+    margin-left:2.5%;
+    margin-top:2.5%;
+}
 
+.col-head {
+    background-color: #026670;
+    text-align:left;
+    color: white;
+}
