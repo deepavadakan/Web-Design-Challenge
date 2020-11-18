@@ -59,47 +59,59 @@
         </div>
     </nav>
 
+    <!--Main area-->
     <div class="container">
         <div class="row">
-          <div class="main-box col-md-8 col-sm-12">
+          <div class="main-box col-lg-7 col-sm-12">
+            
+            <!--Header and left box-->
             <h1>
                 vs. Humidity
             </h1>
             <hr>
+
+            <!--Image and text-->
             <img class=visualizations-img src="../assets/images/Fig2.png" alt="City Latitude vs Max Temperature" >
             <p>There is no correlation between Latitude and Humidity in either hemispheres. However, it's interesting to note that in both hemispheres, a majority of cities had higher humidity. This could be a result of climate change but further tests and sampling over time is required to confirm this.</p>
           </div>
 
           <!--Visualizations right box-->
-          <div class="col-lg-4">
-            <div class="visualizations-box">
-                <h2>
-                    Visualizations
-                </h2>
-                <hr>
+          <div class="visualizations-box col-lg-4 col-sm-12">
+            <h2>
+                Visualizations
+            </h2>
+            <hr>
 
-                <!--Four charts-->
-                <div class="row">
-                    <div class="col-lg-6 col-sm-12 nil-padding-right">
-                        <a href="max-temp.html">
-                            <img class="visual-sm-img" src="../assets/images/Fig1.png" alt="City Latitude vs Max Temperature">
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-sm-12 nil-padding-right">
-                        <img class="visual-sm-img visual-sel-img" src="../assets/images/Fig2.png" alt="City Latitude vs Max Temperature">
-                    </div>
+            <!--Four charts-->
+            <div class="row">
+                <!--Max-Temp-->
+                <div class="col-lg-6 col-sm-4 visualization-img-box">
+                    <h4>Max Temperature</h4>
+                    <a href="max-temp.html">
+                        <img src="../assets/images/Fig1.png" alt="City Latitude vs Max Temperature">
+                    </a>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6 col-sm-12 nil-padding-right">
-                        <a href="cloudiness.html">
-                            <img class="visual-sm-img" src="../assets/images/Fig3.png" alt="City Latitude vs Max Temperature">
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-sm-12 nil-padding-right">
-                        <a href="wind-speed.html">
-                            <img class="visual-sm-img" src="../assets/images/Fig4.png" alt="City Latitude vs Max Temperature">
-                        </a>
-                    </div>
+                
+                <!--Humidity-->
+                <div class="col-lg-6 col-sm-4 visualization-img-box">
+                    <h4>Humidity</h4>
+                    <img class="visual-sel-img" src="../assets/images/Fig2.png" alt="City Latitude vs Max Temperature">
+                </div>
+            
+                <!--Cloudiness-->
+                <div class="col-lg-6 col-sm-4 visualization-img-box">
+                    <h4>Cloudiness</h4>
+                    <a href="cloudiness.html">
+                        <img src="../assets/images/Fig3.png" alt="City Latitude vs Max Temperature">
+                    </a>
+                </div>
+                
+                <!--Wind Speed-->
+                <div class="col-lg-6 col-sm-4 visualization-img-box">
+                    <h4>Wind Speed</h4>
+                    <a href="wind-speed.html">
+                        <img src="../assets/images/Fig4.png" alt="City Latitude vs Max Temperature">
+                    </a>
                 </div>
             </div>
           </div>

@@ -24,7 +24,7 @@
     <!-- Top Navigation bar -->
     <nav class="navbar navbar-expand-lg bg-light">
         <!-- Latitude link-->
-        <a class="navbar-brand active">Latitude</a>
+        <a class="navbar-brand disabled" href="#">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,7 +47,7 @@
                 </li>
 
                 <!-- Comparison-->
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="WebVisualizations/visualizations/comparison.html">Comparison</a>
                 </li>
 
@@ -62,7 +62,7 @@
     <!--Main area-->
     <div class="container">
         <div class="row">
-          <div class="main-box col-lg-8 col-sm-12">
+          <div class="main-box col-lg-7 col-sm-12">
 
             <!--Header and left box-->
             <h1>
@@ -77,41 +77,44 @@
           </div>
           
           <!--Visualizations right box-->
-          <div class="col-lg-4">
-            <div class="visualizations-box">
-                <h2>
-                    Visualizations
-                </h2>
-                <hr>
+          <div class="visualizations-box col-lg-4 col-sm-12">
+            <h2>
+                Visualizations
+            </h2>
+            <hr>
 
-                <!--Four charts-->
-                <div class="row">
-                    <!--Max-Temp-->
-                    <div class="col-lg-6 col-sm-12 nil-padding-right">
-                        <a href="WebVisualizations/visualizations/max-temp.html">
-                            <img class="visual-sm-img" src="WebVisualizations/assets/images/Fig1.png" alt="City Latitude vs Max Temperature">
-                        </a>
-                    </div>
-                    <!--Humidity-->
-                    <div class="col-lg-6 col-sm-12 nil-padding-left">
-                        <a href="WebVisualizations/visualizations/humidity.html">
-                            <img class="visual-sm-img" src="WebVisualizations/assets/images/Fig2.png" alt="City Latitude vs Max Temperature">
-                        </a>
-                    </div>
+            <!--Four charts-->
+            <div class="row">
+                <!--Max-Temp-->
+                <div class="col-lg-6 col-sm-4 visualization-img-box">
+                    <h4>Max Temperature</h4>
+                    <a href="WebVisualizations/visualizations/max-temp.html">
+                        <img src="WebVisualizations/assets/images/Fig1.png" alt="City Latitude vs Max Temperature">
+                    </a>
                 </div>
-                <div class="row">
-                    <!--Cloudiness-->
-                    <div class="col-lg-6 col-sm-12 nil-padding-right">
-                        <a href="WebVisualizations/visualizations/cloudiness.html">
-                            <img class="visual-sm-img" src="WebVisualizations/assets/images/Fig3.png" alt="City Latitude vs Max Temperature">
-                        </a>
-                    </div>
-                    <!--Wind Speed-->
-                    <div class="col-lg-6 col-sm-12 nil-padding-left">
-                        <a href="WebVisualizations/visualizations/wind-speed.html">
-                            <img class="visual-sm-img" src="WebVisualizations/assets/images/Fig4.png" alt="City Latitude vs Max Temperature">
-                        </a>
-                    </div>
+                
+                <!--Humidity-->
+                <div class="col-lg-6 col-sm-4 visualization-img-box">
+                    <h4>Humidity</h4>
+                    <a href="WebVisualizations/visualizations/humidity.html">
+                        <img src="WebVisualizations/assets/images/Fig2.png" alt="City Latitude vs Max Temperature">
+                    </a>
+                </div>
+    
+                <!--Cloudiness-->
+                <div class="col-lg-6 col-sm-4 visualization-img-box">
+                    <h4>Cloudiness</h4>
+                    <a href="WebVisualizations/visualizations/cloudiness.html">
+                        <img src="WebVisualizations/assets/images/Fig3.png" alt="City Latitude vs Max Temperature">
+                    </a>
+                </div>
+                
+                <!--Wind Speed-->
+                <div class="col-lg-6 col-sm-4 visualization-img-box">
+                    <h4>Wind Speed</h4>
+                    <a href="WebVisualizations/visualizations/wind-speed.html">
+                        <img src="WebVisualizations/assets/images/Fig4.png" alt="City Latitude vs Max Temperature">
+                    </a>
                 </div>
             </div>
           </div>
