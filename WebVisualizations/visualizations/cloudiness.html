@@ -3,43 +3,44 @@
 
 <head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Cloudiness</title>
+    <title>Cloudiness</title>
 
-  <!-- Boostrap Stylesheet -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-
-  <!-- Our own CSS stylesheet -->
-  <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="../assets/css/style.css">
 
 </head>
 
 <body>
 
     <!-- Top Navigation bar -->
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-md navbar-light">
         <!-- Latitude link-->
         <a class="navbar-brand" href="../../index.html">Latitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Plots, Comparison and Data links-->
-        <div class="collapse navbar-collapse d-flex flex-md-row-reverse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse flex-md-row-reverse" id="navbarSupportedContent">
             <ul class="navbar-nav">
 
                 <!-- Plots drop down-->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Plots
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item"href="max-temp.html">Max Temperature</a>
+                        <a class="dropdown-item" href="max-temp.html">Max Temperature</a>
                         <a class="dropdown-item" href="humidity.html">Humidity</a>
                         <a class="dropdown-item active">Cloudiness</a>
                         <a class="dropdown-item" href="wind-speed.html">Wind Speed</a>
@@ -60,71 +61,74 @@
     </nav>
 
     <!--Main area-->
-    <div class="container">
+    <div class="container main-area">
         <div class="row">
-          <div class="main-box col-md-7 col-sm-12">
+            <div class="main-box col-md-7 col-sm-12">
 
-            <!--Header and left box-->
-            <h1>
-                vs. Cloudiness
-            </h1>
-            <hr>
+                <!--Header and left box-->
+                <h1>
+                    vs. Cloudiness
+                </h1>
+                <hr>
 
-            <!--Image and text-->
-            <img class=visualizations-img src="../assets/images/Fig3.png" alt="City Latitude vs Max Temperature" >
-            <p>There is no correlation between Latitude and Cloudiness in either hemispheres. While that may be true, it is interesting to note that as you get closer to the North and South Pole, there is barely any cloud formation at this time of the year.</p>
-          </div>
+                <!--Image and text-->
+                <img class=visualizations-img src="../assets/images/Fig3.png" alt="City Latitude vs Max Temperature">
+                <p>There is no correlation between Latitude and Cloudiness in either hemispheres. While that may be
+                    true, it is interesting to note that as you get closer to the North and South Pole, there is barely
+                    any cloud formation at this time of the year.</p>
+            </div>
 
-          <!--Visualizations right box-->
-          <div class="visualizations-box col-md-4 col-sm-12">
-            <h2>
-                Visualizations
-            </h2>
-            <hr>
+            <!--Visualizations right box-->
+            <div class="visualizations-box col-md-4 col-sm-12">
+                <h2>
+                    Visualizations
+                </h2>
+                <hr>
 
-            <!--Four charts-->
-            <div class="row">
-                <!--Max-Temp-->
-                <div class="col-md-6 col-sm-4 visualization-img-box">
-                    <h4>Max Temperature</h4>
-                    <a href="max-temp.html">
-                        <img src="../assets/images/Fig1.png" alt="City Latitude vs Max Temperature">
-                    </a>
-                </div>
+                <!--Four charts-->
+                <div class="row">
+                    <!--Max-Temp-->
+                    <div class="col-md-6 col-sm-4 visualization-img-box">
+                        <h4>Max Temperature</h4>
+                        <a href="max-temp.html">
+                            <img src="../assets/images/Fig1.png" alt="City Latitude vs Max Temperature">
+                        </a>
+                    </div>
 
-                <!--Humidity-->
-                <div class="col-md-6 col-sm-4 visualization-img-box">
-                    <h4>Humidity</h4>
-                    <a href="humidity.html">
-                        <img src="../assets/images/Fig2.png" alt="City Latitude vs Max Temperature">
-                    </a>
-                </div>
-            
-                <!--Cloudiness-->
-                <div class="col-md-6 col-sm-4 visualization-img-box">
-                    <h4>Cloudiness</h4>
-                    <img class="visual-sel-img" src="../assets/images/Fig3.png" alt="City Latitude vs Max Temperature">
-                </div>
-                
-                <!--Wind Speed-->
-                <div class="col-md-6 col-sm-4 visualization-img-box">
-                    <h4>Wind Speed</h4>
-                    <a href="wind-speed.html">
-                        <img src="../assets/images/Fig4.png" alt="City Latitude vs Max Temperature">
-                    </a>
+                    <!--Humidity-->
+                    <div class="col-md-6 col-sm-4 visualization-img-box">
+                        <h4>Humidity</h4>
+                        <a href="humidity.html">
+                            <img src="../assets/images/Fig2.png" alt="City Latitude vs Max Temperature">
+                        </a>
+                    </div>
+
+                    <!--Cloudiness-->
+                    <div class="col-md-6 col-sm-4 visualization-img-box">
+                        <h4>Cloudiness</h4>
+                        <img class="visual-sel-img" src="../assets/images/Fig3.png"
+                            alt="City Latitude vs Max Temperature">
+                    </div>
+
+                    <!--Wind Speed-->
+                    <div class="col-md-6 col-sm-4 visualization-img-box">
+                        <h4>Wind Speed</h4>
+                        <a href="wind-speed.html">
+                            <img src="../assets/images/Fig4.png" alt="City Latitude vs Max Temperature">
+                        </a>
+                    </div>
                 </div>
             </div>
-          </div>
         </div>
     </div>
-    
+
     <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>
