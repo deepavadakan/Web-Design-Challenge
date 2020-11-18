@@ -2,7 +2,7 @@ body {
     --body-color:#E8E8E8;
     --main-color: #026670;
     --hr-color:  #fce181;
-    --box-color: white;
+    --box-bg-color: white;
     --text-header-color: white;
     --p-color: gray;
     --link-color: black;
@@ -48,15 +48,9 @@ img {
 }
 
 .navbar {
-    background-color:var(--box-color);
+    background-color:var(--box-bg-color);
     padding:0px;
     margin-bottom:30px;
-}
-
-@media screen and (max-width: 600px) {
-    .navbar {
-      background-color: var(--main-color);
-    }
 }
 
 .navbar-brand {
@@ -70,19 +64,28 @@ img {
 
 .nav-item {
     margin-right:10px;
-}
-
-.navbar-toggler {
-    background-color: var(--main-color);
+    margin-left:10px;
 }
 
 .dropdown-item.active {
     background-color: var(--main-color);
 }
 
+@media screen and (max-width: 768px) {
+    .navbar {
+        background-color: var(--main-color);
+    }
+    .navbar-toggler {
+        background-color:white;
+        margin-right: 20px;
+    }
+    .navbar-collapse {
+        background-color:white;
+    }
+}
 .main-box, .visualizations-box{
     height: fit-content;
-    background: var(--box-color);
+    background: var(--box-bg-color);
     margin-right:10px;
 }
 
